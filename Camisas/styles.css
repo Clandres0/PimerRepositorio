@@ -1,0 +1,456 @@
+/* -----------------------
+    Header general
+------------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: transparent;
+}
+
+.header-top {
+    display: flex;
+    /* CAMBIO 1: Asegura que el título y el botón estén en los extremos. */
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Nota: La caligrafía Science Gothic se aplica correctamente al H1 en la sección inferior del CSS. */
+header h1 {
+    margin: 0;
+    color: #bfa04d;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+header h1:hover {
+    color:  #bfa04d;
+}
+
+.titulo-pagina {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #bfa04d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.titulo-pagina:hover {
+    background-color: #a18c3d;
+    color: #000000;
+}
+
+.titulo-pagina h1, .titulo-pagina h4 {
+    margin: 0;
+    cursor: inherit;
+    color: #000000;
+}
+
+.titulo-pagina h1 {
+    font-size: 2.5rem;
+}
+
+.titulo-pagina h4 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.lang-switch {
+    padding: 6px 12px;
+    background: #1e7bbf;
+    color:  #bfa04d;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    /* Sugerencia de estilo: Animación al pasar el mouse */
+    transition: background 0.2s, transform 0.2s;
+}
+
+.lang-switch:hover {
+    background: #1565a1; /* Ligeramente más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Pequeño efecto de elevación */
+}
+
+.nav-search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; 
+    justify-content: center; 
+}
+
+nav ul li a {
+    font-size: 1.3em; 
+    text-decoration: none;
+    background-color: #444141;
+    color: #000000;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color:  #bfa04d;
+
+}
+
+/* -----------------------
+    Buscador moderno
+------------------------*/
+.search-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.search-form input {
+    padding: 8px 12px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #433e2a;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* -----------------------
+    Main y Reproductor
+------------------------*/
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: transparent;
+}
+
+
+#main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+/* -----------------------
+    Reproductor de música compacto
+------------------------*/
+.music-player {
+    width: 280px;
+    background: #2b2b2b;
+    border: 2px solid #bfa04d;
+    border-radius: 12px;
+    padding: 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.music-player h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    color: #bfa04d;
+    font-weight: normal;
+    text-align: center;
+}
+
+.controls-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #bfa04d;
+    background: #1e1e1e;
+    color: #bfa04d;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.circle-btn:focus {
+    outline: 2px solid #bfa04d;
+}
+
+.circle-btn:hover {
+    background: #3c3c3c;
+    transform: scale(1.05);
+}
+
+.volume-slider {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #555;
+    cursor: pointer;
+    appearance: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bfa04d;
+    cursor: pointer;
+}
+
+.progress-bar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bfa04d;
+    cursor: pointer;
+}
+
+/* -----------------------
+    Productos Destacados
+------------------------*/
+
+.productos-destacados {
+    margin-top: 20px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* ancho mínimo de 200px, no se estira */
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    grid-auto-rows: min-content;
+    align-items: start;
+}
+
+.producto {
+    background: #bfa04d;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px;
+    min-width: 200px;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nombre-producto {
+    min-height: 40px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+    }
+
+.add-cart {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #1e7bbf;
+    color: #bfa04d;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.add-cart:hover {
+    background-color: #1565a1;
+}
+
+
+body {
+    background-image: url("imagenes/Messi-Besando-Copa-60-x-90.webp"); /* o la ruta donde la guardes */
+    background-size: cover;        /* La imagen ocupa toda la pantalla */
+    background-position: center;   /* Centrada */
+    background-repeat: no-repeat;  /* No se repite */
+    background-attachment: fixed;  /* Efecto suave al hacer scroll */
+}
+
+
+/* -----------------------
+    Footer
+------------------------*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background: transparent;
+}
+
+.contact-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    color: #bfa04d;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: #444141;
+}
+
+.contact-btn img {
+    width: 24px;
+    height: auto;
+}
+/* Estilos para el contenedor de enlaces sociales */
+.social-links {
+    margin-top: 15px; /* Separación del texto de derechos de autor */
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Espacio entre los iconos */
+}
+/* -----------------------
+    Footer - Ajuste para Bootstrap Icons
+------------------------*/
+
+.social-item a {
+    display: block;
+    width: 32px; 
+    height: 32px;
+    color:  #bfa04d; 
+    transition: opacity 0.2s; 
+}
+
+.social-item a:hover {
+    opacity: 0.7; 
+}
+
+.social-icon {
+    /* Define el tamaño del icono a través del tamaño de la fuente */
+    font-size: 32px; /* Asegura que el ícono esté centrado dentro del bloque <a> de 32x32 */
+    display: block;
+    line-height: 1; /* Esto ayuda a centrarlo si hay padding/líneas de texto */
+}
+
+
+/* -----------------------
+    Fuente Science Gothic
+------------------------*/
+.science-gothic-uniquifier {
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, nav ul li a, .highlight, .featured-text, .producto, footer {
+    font-family: "Science Gothic", sans-serif;
+}
+
+/* -----------------------
+    Responsive
+------------------------*/
+@media (max-width: 1024px) {
+    .productos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    .music-player {
+        width: 90%;
+        bottom: 10px;
+        right: 5%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}
