@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IZZI SPORT</title>
+<meta name="description" content="Catálogo de remeras de futbol disponibles en nuestra tienda de ropa: jugador, hincha y estilo retro.">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/imagenes/logos/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imagenes/logos/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imagenes/logos/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script> 
+<script src="i18n.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    
+<header>
+    <div class="header-top">
+        <a href="" class="titulo-pagina" data-i18n="store.title">
+            <h1 data-i18n="store.title">IZZI SPORT</h1>
+            <h4>INDUMENTARIA DEPORTIVA</h4>
+        </a>
+        <button class="lang-switch" onclick="toggleLang()">PT / ES</button>
+    </div>
+    
+    <div class="nav-search-container">
+        <nav>
+            <ul>
+                <li><a href="camisas.html" data-i18n="nav.shirts">Camisetas</a></li>
+                <li><a href="pantalones.html" data-i18n="nav.pants">Pantalones</a></li>
+                <li><a href="conjuntos.html" data-i18n="nav.sets">Conjuntos</a></li>
+            </ul>
+        </nav>
+        <form class="search-form">
+            <input type="text" id="searchInput" placeholder="Buscar">
+            <button type="submit" aria-label="Buscar"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+</header>
+
+<div class="bg-slider">
+    <div class="bg-overlay"></div>
+    <img src="imagenes/Maracana_2022.jpg">
+    <img src="imagenes/camp-1765417781870-5135.jpg">
+    <img src="imagenes/santiago-bernabeu-at-night-hero.webp">
+</div>
+
+<main>
+    <section id="main-content">
+        
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2> 
+            
+            <div class="productos-grid">
+                <div class="producto">
+                    <a href="3d-view.html?model=producto1.glb"><img src="imagenes/Camisas/Arsenal.jpeg" alt="Arsenal"></a>
+                    <div class="nombre-producto">Arsenal</div>
+                    <button class="add-cart">+</button>
+                </div>
+                <div class="producto">
+                    <a href="3d-view.html?model=producto2.glb"><img src="imagenes/Camisas/Boca.jpeg" alt="Boca 2025"></a>
+                    <div class="nombre-producto">Boca</div>
+                    <button class="add-cart">+</button>
+                </div>
+                <div class="producto">
+                    <a href="3d-view.html?model=producto3.glb"><img src="imagenes/Camisas/Inter Miami.jpeg" alt="Inter Miami CF"></a>
+                    <div class="nombre-producto">Inter Miami CF</div>
+                    <button class="add-cart">+</button>
+                </div>
+                <div class="producto">
+                    <a href="3d-view.html?model=producto4.glb"><img src="imagenes/Camisas/Paris Saint-Germain.jpeg" alt="Paris Saint-Germain"></a>
+                    <div class="nombre-producto">Paris Saint-Germain</div>
+                    <button class="add-cart">+</button>
+                </div>
+            </div>
+            <div class="productos-grid">
+                <div class="producto">
+                    <a href="3d-view.html?model=producto4.glb"><img src="imagenes/Camisas/Liverpool.jpeg" alt="Liverpool"></a>
+                    <div class="nombre-producto">Liverpool</div>
+                    <button class="add-cart">+</button>
+                </div>
+                <div class="producto">
+                    <a href="3d-view.html?model=producto4.glb"><img src="imagenes/Camisas/Napoli.jpeg" alt="Napoli"></a>
+                    <div class="nombre-producto">Napoli</div>
+                    <button class="add-cart">+</button>
+                </div>
+                <div class="producto">
+                    <a href="3d-view.html?model=producto4.glb"><img src="imagenes/Camisas/Real Madrid.jpeg" alt="Real Madrid"></a>
+                    <div class="nombre-producto">Real Madrid</div>
+                    <button class="add-cart">+</button>
+                </div>
+                <div class="producto">
+                    <a href="3d-view.html?model=producto4.glb"><img src="imagenes/Camisas/Borussia Dortmund.jpeg" alt="Borussia Dortmund"></a>
+                    <div class="nombre-producto">Borussia Dortmund</div>
+                    <button class="add-cart">+</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <aside class="music-player">
+        <h4 id="currentSongTitle"></h4> 
+        
+        <audio id="audioPlayer">
+            <source src="" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
+
+        <div class="controls-row">
+            <button id="skipBackward" class="circle-btn"><i class="bi bi-skip-start-fill"></i></button>
+            <button id="playPause" class="circle-btn"><i class="bi bi-play-fill"></i></button>
+            <button id="skipForward" class="circle-btn"><i class="bi bi-skip-end-fill"></i></button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5" class="volume-slider">
+        </div>
+
+        <input type="range" id="progressBar" min="0" max="100" value="0" class="progress-bar">
+    </aside>
+
+</main>
+<footer>
+    <p data-i18n="footer.rights">&copy; 2025. Todos los derechos reservados.</p>
+    
+    <div class="social-links">
+        <ul class="social-list">
+            
+            <li class="social-item">
+                <a href="https://www.facebook.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="Facebook">
+                    <i class="bi bi-facebook social-icon"></i> 
+                </a>
+            </li>
+            
+            <li class="social-item">
+                <a href="https://twitter.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="Twitter">
+                    <i class="bi bi-twitter-x social-icon"></i> 
+                </a>
+            </li>
+            
+            <li class="social-item">
+                <a href="https://www.youtube.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="YouTube">
+                    <i class="bi bi-youtube social-icon"></i> 
+                </a>
+            </li>
+            
+            <li class="social-item">
+                <a href="https://www.instagram.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="Instagram">
+                    <i class="bi bi-instagram social-icon"></i> 
+                </a>
+            </li>
+            
+            <li class="social-item">
+                <a href="https://www.tiktok.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="TikTok">
+                    <i class="bi bi-tiktok social-icon"></i> 
+                </a>
+            </li>
+            
+        </ul>
+
+</footer>
+</body>
+</html>
