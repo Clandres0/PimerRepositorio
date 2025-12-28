@@ -21,90 +21,176 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
-<body>
-    <header>
+<body class="Camisas">
+    <header class="site-header">
     <div class="header-top">
-        <a href="" class="titulo-pagina" data-i18n="store.title">
-            <h1 data-i18n="store.title">IZZI SPORT</h1>
-            <h4>INDUMENTARIA DEPORTIVA</h4>
-        </a>
+        <div class="titulo-pagina">
+            <h1>
+                <a href="izzi.html" data-i18n="store.title">IZZI SPORT</a>
+            </h1>
+            <p class="subtitulo">INDUMENTARIA DEPORTIVA</p>
+        </div>
         <button class="lang-switch" onclick="toggleLang()">PT / ES</button>
     </div>
     
     <div class="nav-search-container">
-        <nav>
-            <ul>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="izzi.html">⟵ Volver atrás</a></li>
+                <li><a href="camisas.html" data-i18n="nav.shirts">Camisetas</a></li>
+                <li><a href="conjuntos.html" data-i18n="nav.sets">Conjuntos</a></li>
             </ul>
         </nav>
-        <form class="search-form">
-            <input type="text" id="searchInput" placeholder="Buscar">
-            <button type="submit" aria-label="Buscar"><i class="bi bi-search"></i></button>
+
+        <form class="search-form" role="search">
+            <input type="search" id="searchInput" placeholder="Buscar">
+            <button type="submit" aria-label="Buscar">
+                <i class="bi bi-search"></i>
+            </button>
         </form>
     </div>
-</header>
-    
-    <div class="bg-slider">
-        <div class="bg-overlay"></div>
-        <img src="imagenes/Maracana_2022.jpg">
-        <img src="imagenes/camp-1765417781870-5135.jpg">
-        <img src="imagenes/santiago-bernabeu-at-night-hero.webp">
-    </div>
+    </header>
 
-    <main>
-        <section id="main-content">
-            <h2>Pantalones Disponibles</h2>
-            <div class="productos-grid">
-                <div class="producto">
-                    <a href="3d-view.html?model=conjunto1.glb"><img src="imagenes/camisa base.jpg" alt="Pantalon 1"></a>
-                    <div class="nombre-producto">Pantalon 1</div>
-                    <button class="add-cart">+</button>
-                </div>
-                <div class="producto">
-                    <a href="3d-view.html?model=conjunto2.glb"><img src="imagenes/camisa base.jpg" alt="Pantalon 2"></a>
-                    <div class="nombre-producto">Pantalon 2</div>
-                    <button class="add-cart">+</button>
-                </div>
-                <div class="producto">
-                    <a href="3d-view.html?model=conjunto3.glb"><img src="imagenes/camisa base.jpg" alt="Pantalon 3"></a>
-                    <div class="nombre-producto">Pantalon 3</div>
-                    <button class="add-cart">+</button>
-                </div>
+<main>
+<section class="products-section">
+    <h2>Pantalones globales</h2>
+
+    <div class="swiper mySwiperProductos">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Titular 2025 - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Titular 2025 - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Titular 2025</h3>
+                </article>
             </div>
-        </section>
-    </main>
 
-    <footer>
-    <p data-i18n="footer.rights">&copy; 2025. Todos los derechos reservados.</p>
-    
-    <div class="social-links">
-        <ul class="social-list">
-            <li class="social-item">
-                <a href="https://www.facebook.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="Facebook">
-                    <i class="bi bi-facebook social-icon"></i> 
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="https://twitter.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="Twitter">
-                    <i class="bi bi-twitter-x social-icon"></i> 
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="https://www.youtube.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="YouTube">
-                    <i class="bi bi-youtube social-icon"></i> 
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="https://www.instagram.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="Instagram">
-                    <i class="bi bi-instagram social-icon"></i> 
-                </a>
-            </li>
-            <li class="social-item">
-                <a href="https://www.tiktok.com/" rel="me nofollow noopener noreferrer" target="_blank" aria-label="TikTok">
-                    <i class="bi bi-tiktok social-icon"></i> 
-                </a>
-            </li>
-        </ul>
-    </footer>
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Alternativa 2025 - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Alternativa 2025 - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Alternativodddd 2025</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Retro 1998 - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Retro 1998 - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Retro 1998</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Entrenamiento - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Entrenamiento - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Entrenamiento</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Entrenamiento - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Entrenamiento - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Entrenamiento</h3>
+                </article>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section class="products-section">
+    <h2>Nuevos Ingresos</h2>
+
+    <div class="swiper mySwiperNuevos">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Nueva Camisa 2025 - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Nueva Camisa 2025 - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Nueva Pantalon 2025</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Edición Especial - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Edición Especial - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Edición Especial</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Limitada - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Limitada - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Edicion Limitada</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Edición Especial - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Edición Especial - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Edición Especial</h3>
+                </article>
+            </div>
+
+            <div class="swiper-slide">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="imagenes/camisa base.jpg" alt="Camisa Limitada - Frente">
+                        <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Limitada - Espalda">
+                    </div>
+                    <h3 class="nombre-producto">Pantalon Edicion Limitada</h3>
+                </article>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+    <p data-i18n="footer.rights">© 2025. Todos los derechos reservados.</p>
+
+    <ul class="social-list">
+        <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></li>
+    </ul>
+</footer>
 </body>
 </html>
