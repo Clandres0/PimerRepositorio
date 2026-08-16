@@ -155,3 +155,39 @@ document.addEventListener("DOMContentLoaded", () => {
         reproducirCancion();
     });
 });
+
+// -------------------------
+// Carrusel de productos (Swiper)
+// Portado desde origin/master (2do Cambio, 2025-12-28)
+// -------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".swiper").forEach(swiperEl => {
+
+        if (!swiperEl.classList.contains("mySwiperProductos") &&
+            !swiperEl.classList.contains("mySwiperNuevos")) return;
+
+        new Swiper(swiperEl, {
+            loop: false,
+            spaceBetween: 24,
+            grabCursor: true,
+            navigation: {
+                nextEl: swiperEl.querySelector(".swiper-button-next"),
+                prevEl: swiperEl.querySelector(".swiper-button-prev"),
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                600: {
+                    slidesPerView: 2
+                },
+                900: {
+                    slidesPerView: 3
+                },
+                1200: {
+                    slidesPerView: 4
+                }
+            }
+        });
+    });
+});
