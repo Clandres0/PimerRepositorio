@@ -15,8 +15,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script> 
-<script src="i18n.js"></script> 
+<script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script>
+<script src="i18n.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
             <a href="izzi.html">⟵ Volver atrás</a>
         </nav>
     </header>
-    
+
     <main>
         <section id="main-content">
             <h2>Conjuntos Disponibles</h2>
@@ -45,6 +47,89 @@
                     <div class="nombre-producto">Conjunto 3</div>
                     <button class="add-cart">+</button>
                 </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Pantalones globales</h2>
+            <div class="swiper mySwiperProductos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Pantalon Titular 2025 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Pantalon Titular 2025 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Pantalon Titular 2025</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Pantalon Alternativodddd 2025 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Pantalon Alternativodddd 2025 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Pantalon Alternativodddd 2025</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Pantalon Retro 1998 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Pantalon Retro 1998 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Pantalon Retro 1998</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Pantalon Entrenamiento - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Pantalon Entrenamiento - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Pantalon Entrenamiento</h3>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Nuevos Ingresos</h2>
+            <div class="swiper mySwiperNuevos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Nueva Pantalon 2025 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Nueva Pantalon 2025 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Nueva Pantalon 2025</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Edición Especial - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Edición Especial - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Edición Especial</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Pantalon Edicion Limitada - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Pantalon Edicion Limitada - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Pantalon Edicion Limitada</h3>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>

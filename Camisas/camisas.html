@@ -15,8 +15,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script> 
-<script src="i18n.js"></script> 
+<script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script>
+<script src="i18n.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -45,6 +47,89 @@
                     <div class="nombre-producto">Conjunto 3</div>
                     <button class="add-cart">+</button>
                 </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Remeras globales</h2>
+            <div class="swiper mySwiperProductos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Camisa Titular 2025 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Titular 2025 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Camisa Titular 2025</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Camisa Alternativa 2025 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Alternativa 2025 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Camisa Alternativa 2025</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Camisa Retro 1998 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Retro 1998 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Camisa Retro 1998</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Camisa Entrenamiento - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Entrenamiento - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Camisa Entrenamiento</h3>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Nuevos Ingresos</h2>
+            <div class="swiper mySwiperNuevos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Nueva Camisa 2025 - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Nueva Camisa 2025 - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Nueva Camisa 2025</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Edición Especial - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Edición Especial - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Edición Especial</h3>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/camisa base.jpg" alt="Camisa Limitada - Frente">
+                                <img class="back" src="imagenes/camisa base.jpg" alt="Camisa Limitada - Espalda">
+                            </div>
+                            <h3 class="nombre-producto">Camisa Limitada</h3>
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
